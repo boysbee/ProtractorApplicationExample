@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Text Input Effects</title>
+    <title>AngularJS and Protractor</title>
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/index.css">
@@ -43,13 +43,13 @@
             <br />
 
             <div id="progress-button" class="progress-button">
-                <button ng-click="addTodo()">
+                <button id="add" ng-click="addTodo()">
                     <span>Add</span>
                 </button>
             </div>
 
             <div class="header">
-                <h1><span>Todos</span></h1>
+                <h1><span>{{quantity}} Todos</span></h1>
             </div>
 
             <div ng-repeat="todo in todos">

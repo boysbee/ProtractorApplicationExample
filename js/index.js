@@ -30,5 +30,8 @@ myApp.controller("todosController", ['$scope', function ($scope) {
         $scope.todo.when = $scope.when;
         
         $scope.todos.push($scope.todo);
+        $scope.quantity = $scope.quantity + 1;
     }
+    
+    $scope.quantity = $scope.todos.length;
 }]);
